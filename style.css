@@ -1,90 +1,178 @@
-/* General Styling */
+/* ================================
+   GENERAL STYLING
+================================ */
 body {
-    font-family:  'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+    color: #252a34;
+    background-color: #ffffff;
 }
 
-/* Hero Section */
+/* ================================
+   NAVBAR
+================================ */
+.navbar {
+    background-color: #111827 !important;
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.nav-link {
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #c4b5fd !important;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
 #home {
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background: linear-gradient(135deg, #f8f7ff, #eef2ff);
     min-height: 70vh;
     display: flex;
     align-items: center;
 }
 
-/* Skill Cards */
-.card {
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-}
-
-/* Navigation Links */
-.nav-link {
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #ffc107 !important;
-}
-
-/* Section Headings */
-section h2 {
-    font-weight: bold;
-}
-/* Hero Text */
 #home h1 {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #111827;
 }
 
 #home h2 {
     margin-top: 15px;
     font-weight: 600;
+    color: #6366f1;
 }
 
 #home p {
     margin-top: 20px;
     margin-bottom: 25px;
+    color: #555b6e;
 }
-/* Skill Card Styling */
+
+/* Hero Button */
+#home .btn {
+    padding: 11px 25px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#home .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Photo */
+#home img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 6px solid #ffffff;
+    box-shadow: 0 10px 30px rgba(31, 41, 55, 0.18);
+}
+
+/* ================================
+   SECTION HEADINGS
+================================ */
+section h2 {
+    font-weight: 700;
+    color: #111827;
+}
+
+/* ================================
+   ABOUT SECTION
+================================ */
+#about {
+    background-color: #ffffff;
+}
+
+#about p {
+    color: #5b6272;
+}
+
+/* ================================
+   SKILLS SECTION
+================================ */
+#skills {
+    background-color: #f8f9fc;
+}
+
 .card {
     border: none;
-    border-radius: 12px;
+    border-radius: 14px;
     padding: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.11);
 }
 
 .card-title {
-    font-weight: bold;
+    font-weight: 600;
+    color: #374151;
 }
 
 .card-text {
-    color: #555;
+    color: #626978;
 }
-/* Contact Form Styling */
+
+/* ================================
+   CONTACT SECTION
+================================ */
 #contact {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
 }
 
 #contact h2 {
     margin-bottom: 30px;
 }
 
+#contact .form-label {
+    font-weight: 500;
+    color: #374151;
+}
+
 #contact .form-control {
     border-radius: 8px;
     padding: 12px;
+    border: 1px solid #d9dce3;
+}
+
+#contact .form-control:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.12);
 }
 
 #contact .btn {
     padding: 10px 30px;
     border-radius: 8px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
 }
-/* Footer Styling */
+
+#contact .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ================================
+   FOOTER
+================================ */
 footer {
     margin-top: 30px;
+    background-color: #111827 !important;
 }
 
 footer a {
@@ -94,4 +182,28 @@ footer a {
 
 footer a:hover {
     opacity: 0.7;
+}
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+@media (max-width: 576px) {
+    #home {
+        min-height: auto;
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+
+    #home h1 {
+        font-size: 2.2rem;
+    }
+
+    #home h2 {
+        font-size: 1.4rem;
+    }
+
+    #home img {
+        width: 190px;
+        height: 190px;
+    }
 }
